@@ -1,34 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wapmx.native</groupId>
     <artifactId>mx-native-loader</artifactId>
-    <name>MX Telecom native library loader</name>
+    <name>mx-native-loader</name>
     <version>1.2</version>
-    <scm>
-        <connection>scm:svn:svn+ssh://svn.mxtelecom.com/svn/mx/native/tags/mx-native-loader-1.2</connection>
-    </scm>
+    
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.2</version>
+            <version>4.10</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <distributionManagement>
-        <repository>
-            <id>mx-opensource</id>
-            <name>MX Telecom Opensource Release Repository</name>
-            <url>scpexe://opensource/sites/opensource/maven/repo</url>
-        </repository>
-        <snapshotRepository>
-            <id>mx-opensource</id>
-            <name>MX Telecom Opensource Release Repository</name>
-            <url>scpexe://opensource/sites/opensource/maven/repo</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-
+    
     <profiles>
         <profile>
             <!-- a profile which is enabled at release time, and builds a
